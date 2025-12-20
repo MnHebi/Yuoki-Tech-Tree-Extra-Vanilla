@@ -2587,8 +2587,7 @@ table.insert(tiers,
 		{
 			type = "technology",
 			name = "yi-oil-atomics",
-			icon = "__Yuoki__/graphics/icons/atomics/uc2crudeoil.png",
-			icon_size = 64,
+			icons = yi.lib.recipe.atomics.fluid_up("crude-oil"),
 			effects =
 			{
 			  {
@@ -2633,8 +2632,7 @@ table.insert(tiers,
 		{
 			type = "technology",
 			name = "yi-recycle-atomics",
-			icon = "__Yuoki__/graphics/icons/atomics/crystal2uc.png",
-			icon_size = 64,
+			icons = yi.lib.recipe.atomics.fluid_up("crude-oil"),
 			effects =
 			{
 			  {
@@ -2935,4 +2933,7 @@ table.insert(tiers,
 
 for i,techs in pairs(tiers) do
 	data:extend(validateRecipes(techs))
+
 end
+
+
